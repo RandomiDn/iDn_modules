@@ -1,0 +1,102 @@
+# This file will be read by resetprop
+# Example: Change dpi
+# ro.sf.lcd_density=320
+
+# Graphics Unlocker
+ro.product.model=Random iDn
+ro.product.system.model=Random iDn
+ro.product.vendor.model=Random iDn
+ro.product.odm.model=Random iDn
+
+# Rendering Tweaks
+debug.composition.type=c2d
+debug.egl.hw=1
+debug.enabletr=true
+debug.overlayui.enable=1
+debug.qctwa.preservebuf=1
+debug.performance.tuning=1
+debug.sf.hw=1
+dev.pm.dyn_samplingrate=1
+hw3d.force=1
+ro.config.disable.hw_accel=false
+ro.fb.mode=1
+ro.sf.compbypass.enable=0
+ro.vold.umsdirtyratio=20
+persist.sys.composition.type=c2d
+persist.sys.ui.hw=1
+video.accelerate.hw=1
+
+# Graphic Optimization
+debug.gr.numframebuffers=3
+ro.min_pointer_dur=1
+
+# Graphic Tweaks
+ro.product.gpu.driver=1
+
+# FPs Booster
+persist.sys.NV_FPSLIMIT=90
+persist.sys.NV_POWERMODE=1
+persist.sys.NV_PROFVER=15
+persist.sys.NV_STEREOCTRL=0
+persist.sys.NV_STEREOSEPCHG=0
+persist.sys.NV_STEREOSEP=20
+persist.sys.purgeable_assets=1
+
+# FPS Stabilizer
+debug.sf.showupdates=0
+debug.sf.showcpu=0
+debug.sf.showbackground=0
+debug.sf.showfps=0
+
+# System Properties
+cpu.fps=auto
+gpu.fps=auto
+
+# Hardware 2D & 3D Rendering
+hw3d.force=1
+hw2d.force=1
+
+# Rapid Boot Technology 1.1 (Reduces bootup time)
+persist.sys.shutdown.mode=hibernate
+ro.config.hw_fast_dormancy=1
+ro.config.hw_quickpoweron=tru
+
+# Qualcomm Display Settings (Qualcomm devices ONLY!!)
+com.qc.hardware=1
+debug.qc.hardware=true
+debug.qctwa.preservebuf=1
+debug.qctwa.statusbar=1
+
+# Enable Qualcomm tile rendering (Hardware Rendering)
+debug.enabletr=1
+persist.sys.composition.type=gpu 
+
+rs.gpu.renderscript=0
+
+# Touch Improvements
+touch.pressure.scale=0.001 
+persist.sys.ui.hw=1 
+view.scroll_friction=10 
+touch.size.calibration=diameter 
+touch.size.scale=1 
+touch.size.bias=0 
+touch.size.isSummed=0 
+touch.orientation.calibration=none 
+touch.distance.calibration=none 
+touch.distance.scale=0 
+touch.coverage.calibration=box 
+touch.gestureMode=spots 
+MultitouchSettleInterval=0.1ms 
+MultitouchMinDistance=1px 
+TapInterval=0.1ms 
+TapSlop=1px
+
+# OpenGLES version
+#196608 is decimal for 0x30000 to report major/minor versions as 3/0
+#196609 is decimal for 0x30001 to report major/minor versions as 3/1
+#196610 is decimal for 0x30002 to report major/minor versions as 3/2
+ro.opengles.version=196608
+
+debug.composition.type=skiagl
+debug.hwui.renderer=skiagl
+
